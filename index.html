@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Princessa ❤️</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+            color: #4a4a4a;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+        h1 {
+            color: #d63384;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            color: #555;
+        }
+        .heart-btn {
+            background-color: #ff4b2b;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 12px rgba(255, 75, 43, 0.3);
+        }
+        .heart-btn:hover {
+            background-color: #ff416c;
+            transform: scale(1.05);
+        }
+        .hidden-message {
+            display: none;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px dashed #ffb6c1;
+            color: #d63384;
+            font-weight: bold;
+            font-size: 1.1rem;
+            animation: popIn 0.5s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Don't overthink okayy??? ❤️</h1>
+        <p>I know it's hard to trust me, but please remember: you're the only one I want, the only one I talk to, and my whole world. Nobody else has my attention. I won't make the same mistake again my love. Please give me a chance!!!!</p>
+        
+        <button class="heart-btn" onclick="showMessage()">Tap for a reminder 💌</button>
+
+        <div id="extra" class="hidden-message">
+            I love you so much. I'm right here on call with you, and I'm not going anywhere baby.
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('extra').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
